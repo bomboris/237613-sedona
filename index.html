@@ -3,13 +3,14 @@
 
   <head>
     <meta charset="utf-8">
+    <link href="css/style.css" rel="stylesheet">
     <title>HTML Academy: Седона</title>
   </head>
 
   <body>
     <header class="main-header">
       <div class="index-logo">
-        <img src="http://placehold.it/150x100">
+      <a href="index.html"><img src="img/logo.png" ></a>
       </div>
       <nav class="main-navigation">
         <ul>
@@ -31,71 +32,69 @@
     <main>
       <div class="name-logo-background">
         <div class="name-logo">
-          <img src="http://placehold.it/150x100">
+          <img src="img/sedona.jpg">
         </div>
       </div>
       <div class="slogan">
-        <b class="slogan-text">Седона - небольшой городок в Аризоне,<br>
+        <b class="slogan-text">Седона - небольшой городок в Аризоне,
           заслуживающий большего!
         </b>
         <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон</p>
       </div>
-      <div class="info-box">
+      <section class="info-box">
         <div class="info-box-left">
-          <h3 class="info-box-left-title">Настоящий<br>
+          <h3 class="info-box-left-title">Настоящий
              городок</h3>
           <p>Седона - не аттракцион для туристов,
             <br> там течет своя жизнь</p>
         </div>
         <div class="info-box-right">
-          <img src="http://placehold.it/150x100">
+          <img src="img/img2.jpg">
         </div>
-      </div>
       <section class="features">
         <div class="features-item">
+          <img src="img/2.png">
           <b class="features-name">Жилье</b>
-          <p>Рекомендуем пожить в настоящем
-            <br> мотеле, все как в кино!</p>
+          <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
         </div>
         <div class="features-item">
+          <img src="img/3.png">
           <b class="features-name">Еда</b>
-          <p>Всегда заказывайте фирменный бургер,
-            <br> вы не разочаруетесь!</p>
+          <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
         </div>
         <div class="features-item">
+          <img src="img/1.png"><br>
           <b class="features-name">Сувениры</b>
-          <p>Не только китайского, но и местного
-            <br> производства!
-          </p>
+          <p>Не только китайского, но и местного производства!</p>
         </div>
       </section>
-      <div class="info-box">
+      <section class="info-box">
         <div class="info-box-left">
-          <img src="http://placehold.it/150x100">
+          <img src="img/img1.jpg">
         </div>
         <div class="info-box-right">
           <h3 class="info-box-right-title">Там есть мост дьявола</h3>
           <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
         </div>
-      </div>
-      <div class="advantages">
-        <section class="advantages-left">
+
+      <section class="advantages">
+        <div class="advantages-left">
           <h3 class="advantages-left-title">Небольшая площадь</h3>
           <p>Все достопримечательности
             <br> находятся очень близко</p>
-        </section>
-        <section class="advantages-middle">
+        </div>
+        <div class="advantages-middle">
           <h3 class="advantages-middle-title">Красивая дорога</h3>
           <p>Ехать в седону из Лас-Венаса совсем
             <br> не скучно</p>
-        </section>
-        <section class="advantages-right">
+        </div>
+        <div class="advantages-right">
           <h3 class="advantages-right-title">Мало туристов</h3>
           <p>Большинство едет в Гранд Каньон и
             <br> толпится там</p>
-        </section>
-      </div>
-      <div class="index-content">
+        </div>
+      </section>
+      <section class="index-content">
         <h2 class="index-content-title">Заинтересовались?</h2>
         <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне
         </p>
@@ -106,27 +105,36 @@
           <form class="hotel-book-form" action="https://echo.htmlacademy.ru" method="post">
             <label for="date-enter">Дата заезда</label>
             <input type="date" name="date-enter" id="date-enter">
+            <img src="img/5.png">
             <label for="date-leave">Дата выезда</label>
             <input type="date" name="date-leave" id="date-leave">
+            <img src="img/5.png">
             <label for="adults-count">Взрослые</label>
+            <a href="#">-</a>
             <input type="number" name="adults-count" id="adults-count">
+            <a href="#">+</a>
             <label for="childrens-count">Дети</label>
+            <a href="#">-</a>
             <input type="number" name="childrens-count" id="childrens-count">
+            <a href="#">+</a>
             <button class="btn" type="submit">Найти</button>
           </form>
         </div>
-      </div>
+      </section>
     </main>
     <footer class="main-footer">
       <div class="container">
         <section class="footer-text">#Visitsedona</section>
         <section class="footer-social">
-          <a class="social-btn social-btn-tw" href="#">Twitter</a>
-          <a class="social-btn social-btn-fb" href="#">Facebook</a>
-          <a class="social-btn social-btn-yt" href="#">YouTube</a>
+          <a class="social-btn social-btn-tw" href="#"><img src="img/tw.png"></a>
+          <a class="social-btn social-btn-fb" href="#"><img src="img/facebook.png"></a>
+          <a class="social-btn social-btn-yt" href="#"><img src="img/youtube.png"></a>
         </section>
         <section class="footer-copyrigh">
-          <a href="#"><img src="http://placehold.it/150x100"></a>
+          <a href="#"><img src="img/htmlacad.png"></a>
+        </section>
+        <section class="map">
+          <a href="#"><img src="img/map.jpg"></a>
         </section>
       </div>
     </footer>

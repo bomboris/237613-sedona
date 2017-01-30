@@ -1,0 +1,28 @@
+body {
+    font-family:"PT Sans";
+    font-size: 14pt;
+    line-height:26pt;
+    color: #333333;
+    font-weight:normal;
+}
+.main-navigation {
+  font-family:"PT Sans";
+  font-size: 14pt;
+  line-height:26pt;
+  color: #000000;
+  font-weight:bold;
+}
+.slogan-text {
+  font-family:"PT Sans";
+  font-size: 21pt;
+  line-height:26pt;
+  color: #000000;
+  font-weight:bold;
+}
+.map{
+    z-index: 1;
+
+}
+footer {
+  position: absolute;
+  z-index: 2;
