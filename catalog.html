@@ -13,27 +13,26 @@
         <div class="index-logo">
           <a href="index.html"><img src="img/logo.png"></a>
         </div>
-        <nav class="main-navigation">
+        <nav class="main-navigation clearfix">
           <ul>
-            <li>
+            <li class="left-nav">
               <a href="#">Информация</a>
             </li>
-            <li>
+            <li class="left-nav">
               <a href="#">Фото и видео</a>
             </li>
-            <li>
+            <li class="right-nav">
               <a href="#">Карта штата</a>
             </li>
-            <li>
+            <li class="right-nav">
               <a href="#">Гостиницы</a>
-            </li>
           </ul>
         </nav>
       </div>
     </header>
     <main class="container clearfix">
       <form class="book-form" action="https://echo.htmlacademy.ru" method="get">
-        <div class="one-form">
+        <div class="infrastructure">
           <h3>Инфраструктура:</h3>
           <label>
             <input type="checkbox" name="option1" value="a1">Бассейн</label>
@@ -42,7 +41,7 @@
           <label>
             <input type="checkbox" name="option3" value="a3">Wi-fi</label>
         </div>
-        <div class="two-form">
+        <div class="property-type">
           <h3>Тип жилья:</h3>
           <label>
             <input type="checkbox" name="option4" value="a4">Гостиница</label>
@@ -51,16 +50,21 @@
           <label>
             <input type="checkbox" name="option6" value="a6">Апартаменты</label>
         </div>
-        <div class="three-form">
-          <h3>Стоимость в сутки(Р):</h3>
-          <table>
-            <tr>
-              <td>от 0</td>
-              <td>до 3000</td>
-            </tr>
-          </table>
-          <input type="range" min="0" max="3000" step="1" value="50">
+        <div class="filter-range">
+      <div class="filter-range-title">Стоимость в сутки (р):</div>
+      <div class="price-controls">
+        <label class="min-price">от <input type="text" name="min-price" value="0"></label>
+        <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
+      </div>
+      <div class="range-controls">
+        <div class="scale">
+          <div class="bar"></div>
         </div>
+        <div class="range-toggle range-toggle-min"></div>
+        <div class="range-toggle range-toggle-max"></div>
+      </div>
+      <button class="btn-transparent" type="submit">Показать</button>
+    </div>
       </form>
       <div class="sorting clearfix">
         <section class="counter-section">
@@ -94,11 +98,11 @@
             <h3 class="search-result-name">Amara Resort & spa</h3>
             <div class="search-result-desctription-block">
               <p>Гостиница</p>
-              <button class="search-result-btn-more"><a href="#">Подробнее</a></button>
+              <a class="search-result-btn-more" href="#">Подробнее</a>
             </div>
             <div class="search-result-desctription-block">
               <p>От 3500р.</p>
-              <button class="search-result-btn-book"><a href="#">Забронировать</a></button>
+              <a class="search-result-btn-book" href="#">Забронировать</a>
             </div>
           </section>
           <section class="search-result-rating">
@@ -114,11 +118,11 @@
             <h3 class="search-result-name">Desert quail inn</h3>
             <div class="search-result-desctription-block">
               <p>Мотель</p>
-              <button class="search-result-btn-more"><a href="#">Подробнее</a></button>
+              <a class="search-result-btn-more" href="#">Подробнее</a>
             </div>
             <div class="search-result-desctription-block">
               <p>От 2000р.</p>
-              <button class="search-result-btn-book"><a href="#">Забронировать</a></button>
+              <a class="search-result-btn-book" href="#">Забронировать</a>
             </div>
           </section>
           <section class="search-result-rating">
@@ -134,11 +138,11 @@
             <h3 class="search-result-name">Villas at poco diablo</h3>
             <div class="search-result-desctription-block">
               <p>Апартаменты</p>
-              <button class="search-result-btn-more"><a href="#">Подробнее</a></button>
+              <aclass="search-result-btn-more" href="#">Подробнее</a>
             </div>
             <div class="search-result-desctription-block">
               <p>От 4000р.</p>
-              <button class="search-result-btn-book"><a href="#">Забронировать</a></button>
+              <a class="search-result-btn-book" href="#">Забронировать</a>
             </div>
           </section>
           <section class="search-result-rating">
@@ -148,16 +152,19 @@
         </article>
       </div>
     </main>
-    <footer class="main-footer container">
-      <section class="footer-text">#Visitsedona</section>
-      <section class="footer-social">
-        <a class="social-btn social-btn-tw" href="#"><img src="img/tw.png"></a>
-        <a class="social-btn social-btn-fb" href="#"><img src="img/facebook.png"></a>
-        <a class="social-btn social-btn-yt" href="#"><img src="img/youtube.png"></a>
-      </section>
-      <section class="footer-copyrigh">
-        <a href="#"><img src="img/htmlacad.png"></a>
-      </section>
+    <footer class="container">
+      <div class="main-footer clearfix">
+        <div class="footer-text">#Visitsedona</div>
+        <div class="footer-social">
+          <a class="social-btn social-btn-tw" href="#"><img src="img/tw.png"></a>
+          <a class="social-btn social-btn-fb" href="#"><img src="img/facebook.png"></a>
+          <a class="social-btn social-btn-yt" href="#"><img src="img/youtube.png"></a>
+        </div>
+        <div class="footer-copyrigh">
+          <p>webside by</p>
+          <a href="#"><img src="img/htmlacad.png"></a>
+        </div>
+
       </div>
     </footer>
   </body>
